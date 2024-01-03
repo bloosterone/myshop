@@ -411,7 +411,7 @@ display: flex;
 }
 .second_section-sticky-container{
     width: 70%;
-    height: 60%;
+    height: 70%;
     background-color: blanchedalmond;
 }
 .second_section-sticky-container img{
@@ -427,11 +427,11 @@ display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    padding:10%;
+    padding:2%;
 }
 .second_section-post-one{
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     background-color: #f1f1f1;
     position: relative;
     overflow: hidden;
