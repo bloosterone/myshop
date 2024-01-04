@@ -33,7 +33,10 @@ body {
     justify-content: space-evenly;
     align-items: center;
     right: -100%;
-    transition: right 0.5s ease-in-out; /* Agrega la transición */
+    -webkit-transition: right 0.5s ease-in-out; /* Safari y Chrome antiguos */
+    -moz-transition: right 0.5s ease-in-out; /* Firefox antiguo */
+    -o-transition: right 0.5s ease-in-out; /* Opera antiguo */
+    transition: right 0.5s ease-in-out; /* Transición estándar */
 }
 
 .menu-open{
