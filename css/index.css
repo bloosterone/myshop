@@ -294,10 +294,13 @@ section {
     width: 100%;
     height: 100vh;
     background-color: #f1f1f1;
-    overflow-x: hidden;
+    
 }
 
 /* ----------------/ first section /------------------ */
+.first_section{
+    overflow-x: hidden;
+}
 .first_section-tittle {
     width: 100%;
     height: 20vh;
@@ -305,6 +308,7 @@ section {
     display: flex;
     justify-content: start;
     align-items: center;
+    
 }
 
 .first_section-tittle h2 {
@@ -585,6 +589,7 @@ section {
     height: 300vh;
     display: flex;
     flex-direction: row;
+    justify-content: start;
     position: relative;
 }
 
@@ -691,7 +696,64 @@ input[type="checkbox"]:checked~label {
     color: orange;
 
 }
-
+@media only screen and (max-width: 800px) {
+    .second_section {
+        width: 100%;
+        height: 340vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: start;
+        align-items: start;
+        align-content: start;
+    }
+    
+    .second_section-sticky {
+        position: static;
+        width: 100%;
+        height:25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .second_section-sticky-container {
+        position: relative;
+        width: 100%;
+        height: 70%;
+        background-color: blanchedalmond;
+    }
+    
+    .second_section-sticky-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .second_section-post {
+        width: 100%;
+        height: 75%;
+        padding: 0;
+        justify-content: space-evenly;
+    
+    }
+    .second_section-post-one {
+        width: 90%;
+        height: 300px;
+        background-color: #f1f1f1;
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .second_section-post-one_votes p {
+        margin-top: 10px;
+        font-family: 'Archivo', sans-serif;
+        font-size: .9em;
+        color: var(--gris);
+        text-align: center;
+    }
+}
 /* ----------------/ second_section /------------------ */
 /* ----------------/ third_section /------------------ */
 .third_section {
@@ -802,6 +864,9 @@ input[type="checkbox"]:checked~label {
 
 /* ----------------/ third_section /------------------ */
 /* ----------------/ four section /------------------ */
+.four_section{
+    overflow-x: hidden;
+}
 .four_section-tittle {
     width: 100%;
     height: 10vh;
@@ -809,6 +874,7 @@ input[type="checkbox"]:checked~label {
     display: flex;
     justify-content: start;
     align-items: center;
+   
 }
 
 .four_section-tittle h2 {
