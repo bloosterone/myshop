@@ -18,9 +18,81 @@ body {
     overflow-x: hidden;
     width: 100vw;
 }
-
+body.menu-open {
+    overflow: hidden;
+  }
 /* ----------------/ NAV /------------------ */
+.menu_contenedor{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(10px) saturate(200%);
+    -webkit-backdrop-filter: blur(10px) saturate(200%);
+    background-color: rgba(0, 0, 0, 0.28);
+    
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    right: -100%;
+    
+  }  
+  .e> p > a:link, .e> p > a:visited, .e> p > a:active {
+    text-decoration:none;
+    color: white;
+    font-family: 'Clash Display', sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+  }
+  .e {
+    --b: 0.1em;   /* the thickness of the line */
+    --c: #DE496E; /* the color */
+    
+    color: #fff;
+    padding-block: var(--b);
+    background: 
+      linear-gradient(var(--c) 50%,#fff 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition:.3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+    
+  }
+  .e:hover {
+    --_p: 100%;
+    --_s: .3s;
+    cursor: pointer;
+  }
+  
+  .menu_contenedor .e p > a{
+    color: white;
+    font-family: 'Clash Display', sans-serif;
+    font-size: 2.5em;
+    font-weight: 600;
+ 
+  }
+  .contenedor_equis{
+    
+    width: 100px;
+    height:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    bottom: -30px;
+  }
+  .equis{
+    cursor: pointer;
+  }
+  .equis i{
+    color: #fff;
+    font-size: 30px;
+  }
+  
 nav {
+    overflow-y: hidden;
     width: 100%;
     height: 12vh;
     transition: all .5s ease;
