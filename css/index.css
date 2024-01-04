@@ -437,6 +437,7 @@ section {
 
 .divider-svg {
     z-index: 1;
+    width: 100%;
 }
 
 .container_cont {
