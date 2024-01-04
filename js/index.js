@@ -34,13 +34,14 @@ $('#return-to-top').click(function () {      // When arrow is clicked
 window.addEventListener('scroll', function () {
   console.log("scroll");
   if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-    $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    $('#return-to-top').fadeIn(200); 
+    $('.wsp_button').fadeIn(200);   // Fade in the arrow
     $("#nav").css({
       "background-color": "#fff",
       "outline": "2px solid rgba(209, 213, 219, 0.3)",
       "box-shadow": "rgba(0, 0, 0, 0.45) 0px 25px 20px -30px"
     });
-    $(".a-links, .ul-a").css({
+    $(".a-links, .ul-a, .menu").css({
       "color": "#222",
       
     });
@@ -50,7 +51,8 @@ window.addEventListener('scroll', function () {
     });
      
   } else {
-    $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    $('#return-to-top').fadeOut(200); 
+    $('.wsp_button').fadeOut(200);   // Else fade out the arrow
     $("#nav").css({
       "backdrop-filter": "blur(1px) saturate(200%)",
       "-webkit-backdrop-filter": "blur(1px) saturate(200%)",
@@ -58,7 +60,7 @@ window.addEventListener('scroll', function () {
       "outline": "none",
       "box-shadow": "none"
     });
-    $(".a-links, .ul-a").css({
+    $(".a-links, .ul-a, .menu").css({
       "color": "#fff"
     });
     $("#image").attr("src", "assets/logo.png");
