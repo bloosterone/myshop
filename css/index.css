@@ -33,10 +33,10 @@ body {
     justify-content: space-evenly;
     align-items: center;
     right: -100%;
-    -webkit-transition: right 0.5s linear; /* Safari y Chrome antiguos */
-    -moz-transition: right 0.5s linear; /* Firefox antiguo */
-    -o-transition: right 0.5s linear; /* Opera antiguo */
-    transition: right 0.5s linear; /* Transición estándar */
+    -webkit-transition: right 0.3s linear; /* Safari y Chrome antiguos */
+    -moz-transition: right 0.3s linear; /* Firefox antiguo */
+    -o-transition: right 0.3s linear; /* Opera antiguo */
+    transition: right 0.3s linear; /* Transición estándar */
 }
 
 .menu-open{
