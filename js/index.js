@@ -12,7 +12,7 @@ const swiper = new Swiper(".mySwiper", {
 
 const swiper2 = new Swiper(".mySwiper2", {
   slidesPerView: 3.5,
-  spaceBetween: 30,
+  spaceBetween: 10,
   freeMode: true,
   pagination: {
     el: ".swiper-pagination2",
