@@ -80,25 +80,13 @@ window.addEventListener('scroll', function () {
 });
 
 $("#myButton").on("click", function() {
-  // Almacena la posición de desplazamiento actual
-  let scrollPosition = $(window).scrollTop();
-
-  // Ajusta la posición del menú en función de la posición actual de la página
-  $(".menu_contenedor").css({
-    "top": scrollPosition,
-    "right": "-100%" // Ajusta la posición inicial de la derecha a -100%
-  });
-
-  // Abre el menú con una animación suave
-  $("body").addClass('menu-open');
-  $(".menu_contenedor").animate({ "right": "0" }, 500); // Ajusta la velocidad aquí (500 es la duración en milisegundos)
+  // Abre el menú agregando la clase 'menu-open' al menú
+  $(".menu_contenedor").addClass('menu-open');
 });
 
 $(".equis").on("click", function() {
-  // Cierra el menú con una animación suave
-  $(".menu_contenedor").animate({ "right": "-100%" }, 500, function() {
-    // Callback después de la animación (opcional)
-    $("body").removeClass('menu-open'); // Asegúrate de quitar la clase al cerrar el menú
-  });
+  // Cierra el menú eliminando la clase 'menu-open' del menú
+  $(".menu_contenedor").removeClass('menu-open');
 });
+
 
