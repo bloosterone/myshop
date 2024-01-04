@@ -11,7 +11,7 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 const swiper2 = new Swiper(".mySwiper2", {
-  slidesPerView: 3.5,
+  slidesPerView: 1.5,
   spaceBetween: 10,
   freeMode: true,
   pagination: {
@@ -23,7 +23,14 @@ const swiper2 = new Swiper(".mySwiper2", {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    // cuando el ancho de viewport es menor a 800
+    800: {
+      slidesPerView: 3.5,
+    },
+  },
 });
+
 
 $('#return-to-top').click(function () {      // When arrow is clicked
   $('body,html').animate({

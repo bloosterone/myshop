@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    
+    width: 100vw;
 }
 
 /* ----------------/ NAV /------------------ */
@@ -398,7 +398,23 @@ section {
     background-color: #b9a18b;
     /* Cambia el color a tu preferencia */
 }
+@media only screen and (max-width: 800px) {
+    .first_section-tittle {
+        width: 100%;
+        height: 15vh;
+    }
+    .first_section-tittle h2 {
+        font-size: 1.2em;
+    }
+    .first_section-tittle .flechas {
+        position: absolute;
 
+        right: 10px;
+        width: 26%;
+        height: 90%;
+    
+    }
+}
 /* ----------------/ first section /------------------ */
 /* ----------------/ DIV /------------------ */
 .divider1 {
