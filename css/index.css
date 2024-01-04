@@ -691,7 +691,7 @@ input[type="checkbox"]:checked~label {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    outline: 1px solid var(--rojo);
+    
 }
 
 .third_section_container {
@@ -750,6 +750,44 @@ input[type="checkbox"]:checked~label {
     object-fit: cover;
     border-radius: 40px;
     position: absolute;
+}
+@media only screen and (max-width: 800px) {
+    .third_section {
+        height: 80vh;
+        flex-direction: column;
+    }
+    .third_section_container {
+        width: 90%;
+        height: 46%;
+        border-radius: 20px;
+        min-width: 312px;
+        min-height: 202px
+    }
+    .third_section_container-letters h2 {
+        font-size: 2.5em;
+    }
+    .third_section_container-letters button {
+        width: 44%;
+        height: 30%;
+        font-family: 'Clash Display', sans-serif;
+        font-size: 1em;
+        font-style: italic;
+        font-weight: 800;
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+        color: var(--gris);
+        border-radius: 20px;
+    
+    }
+    
+    .third_section_container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        position: absolute;
+    }
 }
 
 /* ----------------/ third_section /------------------ */
