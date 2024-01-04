@@ -531,7 +531,8 @@ section {
         height: 85vh;
         display: flex;
         justify-content: center;
-        align-items: start
+        align-items: start;
+        overflow: hidden;
     }
     
     .diseño {
