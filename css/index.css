@@ -3,6 +3,7 @@
     --azul: blue;
     --negro: black;
     --gris: #424242;
+    --subtitle: 1.2em;
 }
 
 * {
@@ -404,7 +405,7 @@ section {
         height: 15vh;
     }
     .first_section-tittle h2 {
-        font-size: 1.2em;
+        font-size: var(--subtitle);
     }
     .first_section-tittle .flechas {
         position: absolute;
@@ -428,6 +429,7 @@ section {
 
 .diseño {
     width: 100%;
+    height: 70%;
     border-radius: 40px;
     position: absolute;
     z-index: 2;
@@ -440,7 +442,7 @@ section {
 .container_cont {
     z-index: 5;
     width: 80%;
-    height: 60%;
+    height: 70%;
     align-self: center;
     /* outline: 1px solid var(--azul); */
     position: absolute;
@@ -523,7 +525,49 @@ section {
     width: 100%;
     height: 100%;
 }
-
+@media only screen and (max-width: 800px) {
+    .diseño {
+        width: 150%;
+        height: 100%;
+        border-radius: 40px;
+        position: absolute;
+        z-index: 2;
+    }
+    .divider-svg {
+        z-index: 1;
+    }
+    .container_cont {
+        z-index: 5;
+        width: 80%;
+        height: 60%;
+        overflow: hidden;
+    }
+    .container_cont-sectiontop {
+        z-index: 3;
+        width: 80%;
+        height: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Clash Display', sans-serif;
+        font-size: 2em;
+        font-weight: 600;
+    
+    }
+   
+    
+    .container_cont_A-number {
+        
+        font-family: 'Archivo', sans-serif;
+        font-size: 1.2em;
+        
+    }
+    
+    .container_cont-sectionbottom {
+        font-size: .7em;
+        text-align: center;
+    }
+}
 /* ----------------/ DIV /------------------ */
 /* ----------------/ second_section /------------------ */
 .second_section {
@@ -811,7 +855,23 @@ input[type="checkbox"]:checked~label {
     background-color: #b9a18b;
     /* Cambia el color a tu preferencia */
 }
+@media only screen and (max-width: 800px) {
+    .four_section-tittle {
+        width: 100%;
+        height: 15vh;
+    }
+    .four_section-tittle h2 {
+        font-size: var(--subtitle);
+    }
+    .four_section-tittle .flechas {
+        position: absolute;
 
+        right: 10px;
+        width: 26%;
+        height: 90%;
+    
+    }
+}
 /* ----------------/ four section /------------------ */
 /* ----------------/ footer section /------------------ */
 .section_footer {
