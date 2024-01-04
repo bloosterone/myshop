@@ -527,6 +527,13 @@ section {
     height: 100%;
 }
 @media only screen and (max-width: 800px) {
+    .divider1 {
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: start
+    }
+    
     .diseño {
         width: 150%;
         height: 100%;
@@ -539,7 +546,7 @@ section {
     }
     .container_cont {
         z-index: 5;
-        width: 80%;
+        width: 90%;
         height: 60%;
         overflow: hidden;
     }
@@ -756,6 +763,7 @@ input[type="checkbox"]:checked~label {
     .third_section {
         height: 80vh;
         flex-direction: column;
+        justify-content: space-around;
     }
     .third_section_container {
         width: 90%;
