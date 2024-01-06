@@ -97,3 +97,9 @@ $(".btn_mens").on("click", function() {
   window.location.href = '../html/womens.html';
   
 });
+$("#img_kids").on("click", function() {
+  window.location.href = '../html/kids.html';
+});
+$("#img_accessories").on("click", function() {
+  window.location.href = '../html/accessories.html';
+});
