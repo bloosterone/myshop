@@ -128,7 +128,7 @@ nav .logo img {
     height: 80%;
     object-fit: cover;
     width: 80%;
-
+    cursor: pointer;
 }
 
 .nav_product {

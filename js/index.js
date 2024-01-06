@@ -52,7 +52,7 @@ window.addEventListener('scroll', function () {
       "color": "#222",
       
     });
-    $("#image").attr("src", "assets/logo_black.png");
+    $("#image").attr("src", "../assets/logo_black.png");
     $(".ul-ul").css({
       "background-color": "#fff"
     });
@@ -70,7 +70,7 @@ window.addEventListener('scroll', function () {
     $(".a-links, .ul-a, .menu").css({
       "color": "#fff"
     });
-    $("#image").attr("src", "assets/logo.png");
+    $("#image").attr("src", "../assets/logo.png");
     $(".ul-ul").css({
       "backdrop-filter": "blur(1px) saturate(200%)",
       "-webkit-backdrop-filter": "blur(1px) saturate(200%)",
@@ -89,4 +89,11 @@ $(".equis").on("click", function() {
   $(".menu_contenedor").removeClass('menu-open');
 });
 
-
+$(".btn_womens").on("click", function() {
+  window.location.href = '../html/womens.html';
+  
+});
+$(".btn_mens").on("click", function() {
+  window.location.href = '../html/womens.html';
+  
+});
