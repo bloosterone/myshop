@@ -4,6 +4,7 @@
     --negro: black;
     --gris: #424242;
     --subtitle: 1.2em;
+    --green:#b5d5b5;
 }
 
 * {
@@ -84,7 +85,7 @@ section {
 .e {
     --b: 0.1em;
     /* the thickness of the line */
-    --c: #DE496E;
+    --c: #b5d5b5;
     /* the color */
 
     color: #fff;
