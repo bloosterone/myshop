@@ -5,6 +5,7 @@
     --gris: #424242;
     --subtitle: 1.2em;
     --green:#b5d5b5;
+    --cafe: #b9a18b;
 }
 
 * {
@@ -338,6 +339,15 @@ li:hover >.ul-ul {
     font-family: 'Archivo', sans-serif;
     font-size: 2em;
     color: #b5d5b5;
+}
+.first_section-tittle .f-womans{
+    color: pink;
+}
+.first_section-tittle .f-kids{
+    color: rgba(130, 238, 238, 0.685);
+}
+.first_section-tittle .f-accessories{
+    color: var(--cafe);
 }
 
 .first_section-tittle p:last-child {

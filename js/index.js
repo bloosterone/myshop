@@ -94,7 +94,7 @@ $(".btn_womens").on("click", function() {
   
 });
 $(".btn_mens").on("click", function() {
-  window.location.href = '../html/womens.html';
+  window.location.href = '../html/mens.html';
   
 });
 $("#img_kids").on("click", function() {
